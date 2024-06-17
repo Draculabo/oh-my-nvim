@@ -42,6 +42,8 @@ cnoremap <C-k> <Up>
 cnoremap <C-h> <Left>
 cnoremap <C-l> <Right>
 
+xnoremap , ^
+xnoremap . g_
 
 " number increment and decrement
 nnoremap = <C-a>
