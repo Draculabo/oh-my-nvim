@@ -10,6 +10,9 @@ require("lazy").setup({
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
       update_notifications = true, -- Enable/disable notification about running `:Lazy update` twice to update pinned plugins
     },
+  spec = {
+    { import = "lazyvim.plugins.extras.vscode" },
+  },
   },
   { import = "community" },
   { import = "plugins" },
