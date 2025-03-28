@@ -10,5 +10,7 @@ return {
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.vscode-icons" },
   { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.recipes.cache-colorscheme" },
   -- import/override with your plugins folder
 }
