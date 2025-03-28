@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.vscode-icons" },
+  { import = "astrocommunity.git.octo-nvim" },
   -- import/override with your plugins folder
 }
