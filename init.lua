@@ -1,5 +1,11 @@
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
+if vim.fn.has "wsl" == 1 then
+  vim.api.nvim_create_autocmd("TextYankPost", {
+    group = vim.api.nvim_create_augroup("Yank", { clear = true }),
+    callback = function() vim.fn.system("win32yank.exe -i", vim.fn.getreg '"') end,
+  })
+end
 if vim.g.vscode then
   cmdheight = 1
   return
